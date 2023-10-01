@@ -17,4 +17,6 @@ const webAPI = getAPI(main);
 module.exports = { webAPI };
 
 const investorRoutes = require("./routes/investors");
+const userRoutes = require("./routes/users");
 app.use("/", investorRoutes);
+app.use("/", userRoutes);
